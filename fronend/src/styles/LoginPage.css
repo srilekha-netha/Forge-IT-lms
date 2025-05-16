@@ -1,0 +1,154 @@
+/* LoginPage.css */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #7c7d81, #6b6b6b);
+}
+
+/* Center everything */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.login-box {
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  transition: transform 0.3s ease;
+}
+
+.login-box:hover {
+  transform: scale(1.02);
+}
+
+.login-box h2 {
+  text-align: center;
+  color: #4b0082;
+  margin-bottom: 25px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.login-box input,
+.login-box select {
+  width: 100%;
+  padding: 14px 16px;
+  margin: 12px 0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  box-sizing: border-box;
+  transition: box-shadow 0.2s ease;
+}
+
+.login-box input:focus,
+.login-box select:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(102, 126, 234, 0.8);
+  border-color: #667eea;
+}
+
+.login-box button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 20px;
+  background: #6a5acd;
+  border: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(106, 90, 205, 0.4);
+  transition: background 0.3s ease;
+}
+
+.login-box button:hover {
+  background: #483d8b;
+}
+
+/* Responsive tweaks */
+@media (max-width: 480px) {
+  .login-box {
+    padding: 30px 20px;
+    border-radius: 15px;
+  }
+
+  .login-box h2 {
+    font-size: 24px;
+  }
+
+  .login-box input,
+  .login-box select {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .login-box button {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+}
+.tab-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tab-buttons button {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 2px solid transparent;
+  background: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tab-buttons .active {
+  font-weight: bold;
+  border-bottom: 2px solid #6a5acd;
+  color: #4b0082;
+}
+
+.google-section {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.google-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+  padding: 10px;
+  width: 100%;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+
+.google-btn:hover {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.google-btn img {
+  width: 20px;
+  height: 20px;
+}
+
